@@ -54,7 +54,7 @@ class ImageCompressionGUI:
     def browse_image(self):
         
         image_path = filedialog.askopenfilename(
-            filetypes=[("Image files", "*.jpg *.jpeg *.png *.bin *.bmp")]
+            filetypes=[("Image files", "*.jpg *.jpeg *.png *.bin")]
         )
         self.image_path_entry.delete(0, tk.END)
         self.image_path_entry.insert(0, image_path)
@@ -84,7 +84,8 @@ class ImageCompressionGUI:
 
     def decompress_image(self):
         try:
-            compressed_path = "IO/Outputs/compressed_image.bin"
+            image_path = self.image_path_entry.get()
+            compressed_path = image_path
             if not os.path.exists(compressed_path):
                 messagebox.showwarning("Warning", "No compressed image found!")
                 return
