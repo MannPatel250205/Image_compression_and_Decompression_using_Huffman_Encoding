@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Huffman Image Compression Tool
 
 This project is a GUI-based image compression and decompression tool using Huffman Coding. It is implemented in Python and uses Tkinter for the GUI.
@@ -80,3 +81,6 @@ Contributions are welcome! Please fork the repository, make changes, and submit 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+=======
+I will be explaining code here
+>>>>>>> abaf84c00e59444eff489c497592021f66d993e4

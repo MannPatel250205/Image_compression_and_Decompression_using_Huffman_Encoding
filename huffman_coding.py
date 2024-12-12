@@ -76,4 +76,8 @@ def decompress(compressed_image_bit_string):
             decompressed_image_bit_string += code_to_byte[current_code]
             current_code = ""  # Reset the code buffer
 
+<<<<<<< HEAD
     return decompressed_image_bit_string
+=======
+    return decompressed_image_bit_string
+>>>>>>> abaf84c00e59444eff489c497592021f66d993e4
